@@ -30,7 +30,7 @@ function inscribir() {
     document.getElementById("resultado").textContent = "¡Inscripción Exitosa!";
   }
   
-  function precio() {
+  function duracion() {
     var v1 = document.getElementById("marca").value;
     var v2 = document.getElementById("modelo").value;
   
@@ -50,7 +50,7 @@ function inscribir() {
     }
   }
   
-  function calcular() {
+  function metodo() {
     var valor1 = parseFloat(document.getElementById("n1").value);
     var valor2 = parseFloat(document.getElementById("n2").value);
     var op = document.getElementById("opera").value;
