@@ -24,8 +24,8 @@ function inscribir() {
     document.getElementById("apellido").value = "";
     document.getElementById("dni").value = "";
     document.getElementById("edad").value = "";
-    document.getElementsByName("sexo").value = "";
-    document.getElementById("curso").value = "";
+    document.querySelector('input[name="sexo"]:checked').value ="";
+    document.getElementById("fecha").value = "2024-07-01";
   
     document.getElementById("resultado").textContent = "¡Inscripción Exitosa!";
   }
@@ -51,9 +51,7 @@ function inscribir() {
   }
   
   function metodo() {
-    var valor1 = parseFloat(document.getElementById("n1").value);
-    var valor2 = parseFloat(document.getElementById("n2").value);
-    var op = document.getElementById("opera").value;
+    var op = document.querySelector('input[name="plan"]:checked').value;
     var resultado;
   
     if (op == 1) {
