@@ -8,7 +8,7 @@
     <script src="code.js"></script>
 </head>
 <body>
-   <div class="div2" style="margin-left: 200px">
+   <div class="div2">
       <h1>Afiliacion cliente</h1>
 
       <form>
@@ -50,34 +50,25 @@
         </p>
         <p>
           Sexo: Masculino
-          <input type="radio" name="sexo" id="sexo" value="masculino" /> Femenino
-          <input type="radio" name="sexo" id="sexo" value="femenino" />
+          <input type="radio" name="sexo" value="masculino" /> Femenino
+          <input type="radio" name="sexo" value="femenino" />
         </p>
-          <p> Curso seleccionado:
-          <select name="curso" id="curso">
-            <option value="1">Javascript</option>
-            <option value="2">Phyton</option>
-            <option value="3">C++</option>
-              </p>
-          <p>
-              Duracion:
-              <select name="duracion" id="duracion">
-                  <option value="1"></option>
-            <option value="2"></option>
-            <option value="3"></option> 
-          </p>
+          <p> Fecha de comienzo:
+          <input type="date" name="fecha" value="2024-07-01" />
+        </p>
+         
       </form>
 
-      <button onclick="inscribir()">Inscribirse</button>
+      <button onclick="afiliar()">Inscribirse</button>
       <p id="resultado"></p>
     </div>
 
     <div class="div2">
-      <h1 class="h1e">CALCULO DE DURACION</h1>
+      <h1 class="h1">Calculo de duracion</h1>
 
       <form>
         <p>
-          AREA:
+          <strong>Area:</strong>
           <select name="area" id="area">
             <option value="1">Javascript</option>
             <option value="2">Phyton</option>
@@ -86,43 +77,32 @@
         </p>
 
         <p>
-          NIVEL:
+          <strong>Nivel:</strong>
           <select name="nivel" id="nivel">
-            <option value="1">Basic</option>
-            <option value="2">Junior</option>
-            <option value="3">Senior</option>
+            <option value="A">Basic</option>
+            <option value="B">Junior</option>
+            <option value="C">Senior</option>
           </select>
         </p>
-
+          <p> <strong>Duracion:</strong> </p>
+<div class="div3">
+     <h1 class="h1">Plan de pago</h1>
         <p>
-          <strong>FECHA DE COMIENZO:</strong>
-          <input type="date" name="fecha" value="2024-07-01" />
-        </p>
-
-        <p>
-          N1
-          <input type="number" name="n1" id="n1" placeholder="indica su edad" />
-        </p>
-
-        <p>
-          N2
-          <input type="number" name="n2" id="n2" placeholder="indica su edad" />
-        </p>
-
-        <p>
-          OPERACION :
-          <select name="operar" id="opera">
-            <option value="1">Suma</option>
-            <option value="2">Resta</option>
-            <option value="3">Multiplica</option>
-          </select>
+          <strong>Plan de pago:</strong>
+          Por curso:<input type="radio" name="plan" value="Por curso"/>
+            <br>
+            Mensual:<input type="radio" name="plan" value="Mensual"/>
+            <br>
+           Anual:<input type="radio" name="plan" value="Anual"/>
+            <br>
         </p>
       </form>
-
+         <button onclick="calcular()">CALCULAR</button>
+        <br>
+        <br>
       <button onclick="precio()">MOSTRAR PRECIO</button>
-      <button onclick="calcular()">CALCULAR</button>
-
-      <p id="resultado2"></p>
+         <p id="resultado2"></p>
     </div> 
+</div>
 </body>
 </html>
