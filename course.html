@@ -11,10 +11,10 @@
    <div class="div2">
       <h1>Afiliacion cliente</h1>
 
-      <form>
+      <form submit="event.preventDefault()">
         <p>
           Nombre:
-          <input required 
+          <input 
             type="text"
             name="nombre"
             id="nombre"
@@ -23,7 +23,7 @@
         </p>
         <p>
           Apellido:
-          <input required
+          <input
             type="text"
             name="apellido"
             id="apellido"
@@ -32,7 +32,7 @@
         </p>
         <p>
           DNI:
-          <input required 
+          <input 
             type="number"
             name="dni"
             id="dni"
@@ -41,7 +41,7 @@
         </p>
         <p>
           Edad:
-          <input required
+          <input
             type="number"
             name="edad"
             id="edad"
@@ -50,8 +50,8 @@
         </p>
         <p>
           Sexo: Masculino
-          <input type="radio" name="sexo" id="masculino" value="masculino" /> Femenino
-          <input type="radio" name="sexo" id="femenino" value="femenino" />
+          <input type="radio" name="sexo" value="masculino" /> Femenino
+          <input type="radio" name="sexo" value="femenino" />
         </p>
           <p> Fecha de comienzo:
           <input type="date" name="fecha" value="2024-07-01" />
@@ -60,13 +60,13 @@
       </form>
 
       <button class="bot1" onclick="inscribir()">Inscribirse</button>
-      <p id="resultado"></p>
+      <p id="mensaje"></p>
     </div>
 
     <div class="div3">
       <h1 class="h1">Calculo de duracion</h1>
 
-      <form>
+      <form onsubmit="event.preventDefault()">
         <p>
           <strong>Area:</strong>
           <select name="area" id="area">
@@ -86,11 +86,13 @@
             <br>
             <br>
         </p>
+      </form>
         <button class="bot2" onclick="duracion()"> Calcular </button>  
         <p> <strong>Duracion:</strong> <span id="duracion"></span></p>
          <hr> 
 <div class="div4">
      <h1 class="h1">Plan de pago</h1>
+     <form onsubmit="event.preventDefault()"></form>
         <p>
           <strong>Plan de pago:</strong>
           Por curso:<input type="radio" name="plan" value="por_curso"/>
@@ -103,7 +105,7 @@
       </form>
         <br>
       <button class="bot3" onclick="metodo()"> Mostrar </button>
-         <p id="resultado2"></p>
+         <p>$<span id="costo"></span> por semana</p>
     </div> 
 </div>
 </body>

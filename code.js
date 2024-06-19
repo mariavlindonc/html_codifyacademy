@@ -24,10 +24,11 @@ function inscribir() {
     document.getElementById("apellido").value = "";
     document.getElementById("dni").value = "";
     document.getElementById("edad").value = "";
-    document.querySelector('input[name="plan"]:checked').value;
-    document.getElementById("curso").value = "";
+    document.getElementById("masculino").checked = false;
+    document.getElementById("femenino").checked = false;
+
   
-    document.getElementById("resultado").textContent = "Inscripción Exitosa";
+    document.getElementById("mensaje").textContent = "Inscripción Exitosa.";
   }
   
   function duracion() 
@@ -98,5 +99,5 @@ function inscribir() {
       costo -= 7000 * 0.05;
     }
   
-    document.getElementById("duracion").textContent = costo;
+    document.getElementById("costo").textContent = costo;
   }
