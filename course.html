@@ -8,9 +8,8 @@
     <script src="./code.js"></script>
 </head>
 <body>
-   <div class="div2">
-      <h1>Afiliacion cliente</h1>
-
+   <div class="div" id="insc">
+      <h1>¡Inscríbete a un curso!</h1>
       <form onsubmit="event.preventDefault()">
         <p>
           Nombre:
@@ -57,55 +56,53 @@
           <input type="date" id="fecha" name="fecha" value="2024-07-01" />
         </p>
       </form>
-
-      <button class="bot1" type="submit" onclick="inscribir()">Inscribirse</button>
+      <button class="bot" type="submit" onclick="inscribir()">Inscribirse</button>
       <p id="mensaje"></p>
     </div>
 
-    <div class="div3">
-      <h1 class="h1">Calculo de duracion</h1>
-
-      <form onsubmit="event.preventDefault()">
-        <p>
-          <strong>Area:</strong>
-          <select name="area" id="area">
-            <option value="1">Javascript</option>
-            <option value="2">Phyton</option>
-            <option value="3">C++</option>
-          </select>
-        </p>
-
-        <p>
-          <strong>Nivel:</strong>
-          <select name="nivel" id="nivel">
-            <option value="1">Basic</option>
-            <option value="2">Junior</option>
-            <option value="3">Senior</option>
-          </select>
+    <div class="div" id="func">
+      <div class="div2" id="dur">
+        <h1 class="h1">Calculo de duracion</h1>
+        <form onsubmit="event.preventDefault()">
+          <p>
+            <strong>Area:</strong>
+            <select name="area" id="area">
+              <option value="1">Javascript</option>
+              <option value="2">Phyton</option>
+              <option value="3">C++</option>
+            </select>
+          </p>
+          <p>
+            <strong>Nivel:</strong>
+            <select name="nivel" id="nivel">
+              <option value="1">Basic</option>
+              <option value="2">Junior</option>
+              <option value="3">Senior</option>
+            </select>
+              <br>
+              <br>
+          </p>
+        </form>
+        <button class="bot" onclick="duracion()"> Calcular </button>  
+        <p> <strong>Duracion:</strong> <span id="duracion"></span></p> 
+      </div>
+      <hr>
+      <div class="div2" id="pago">
+          <h1 class="h1">Plan de pago</h1>
+          <form onsubmit="event.preventDefault()"></form>
+            <p>
+              Por curso:<input type="radio" name="plan" value="por_curso"/>
+                <br>
+                Mensual:<input type="radio" name="plan" value="mensual"/>
+                <br>
+                Anual:<input type="radio" name="plan" value="anual"/>
+                <br>
+            </p>
+          </form>
             <br>
-            <br>
-        </p>
-      </form>
-        <button class="bot2" onclick="duracion()"> Calcular </button>  
-        <p> <strong>Duracion:</strong> <span id="duracion"></span></p>
-         <hr> 
-<div class="div4">
-     <h1 class="h1">Plan de pago</h1>
-     <form onsubmit="event.preventDefault()"></form>
-        <p>
-          <strong>Plan de pago:</strong>
-          Por curso:<input type="radio" name="plan" value="por_curso"/>
-            <br>
-            Mensual:<input type="radio" name="plan" value="mensual"/>
-            <br>
-           Anual:<input type="radio" name="plan" value="anual"/>
-            <br>
-        </p>
-      </form>
-        <br>
-      <button class="bot3" onclick="metodo()"> Mostrar </button>
-         <p>$<span id="costo"></span> por semana</p>
-    </div> 
+          <button class="bot" onclick="metodo()"> Mostrar </button>
+              <p>$<span id="costo"></span> por semana</p>
+        </div> 
 </div>
 </body>
 </html>

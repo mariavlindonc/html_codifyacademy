@@ -9,7 +9,7 @@ function validar()
     } 
     else 
     {
-        alert("Usuario y clave incorrectos.");
+        alert("Usuario y/o clave incorrectos.");
     }
 }
 

@@ -7,27 +7,19 @@
     <link rel="stylesheet" href="./style.css">
     <script src="./code.js"></script>
 </head>
-<body>
-       <div class="div1">
-
-
-
-        <h1>CURSO DE PROGRAMACION</h1>
-        
-        <form>
-        
-        <p>Nombre: <input type="text" name="nombre" id="nombre" placeholder="Indique su usuario"></p>
-        <p>Contraseña: <input type="password" name="clave" id="clave" placeholder="Indique su clave"></p>
-        
-        
-        </form>
-        
-        
-        <button class="main-button" onclick="validar()">ENTRAR</button>
-        <button class="main-button" onclick="limpiar()">LIMPIAR</button>
-        
-        
-        
+<body id="signinpage">
+       <div class="login">
+            <div id="banner">
+                <h1>CODIFY ACADEMY</h1>
+            </div>
+            <div id="logform">
+                <form onsubmit="event.preventDefault()">
+                    <p>Usuario: <input type="text" name="usuario" id="usuario" placeholder="Indique su usuario"></p>
+                    <p>Contraseña: <input type="password" name="clave" id="clave" placeholder="Indique su clave"></p>
+                </form>
+                <button class="main-button" type="submit" onclick="validar()">ENTRAR</button>
+                <button class="main-button" type="submit" onclick="limpiar()">LIMPIAR</button>
+            </div>
         </div> 
 </body>
 </html>
