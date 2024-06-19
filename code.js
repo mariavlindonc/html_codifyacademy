@@ -52,20 +52,19 @@ function inscribir() {
   
   function metodo() {
     var op = document.querySelector('input[name="plan"]:checked').value;
-    var costo = ;
+    var costo = 7000;
   
     if (op == 'por_curso') {
-      resultado = valor1 + valor2;
+      costo += 7000 * 0.05;
     }
   
     if (op == 'mensual') {
-      resultado = valor1 - valor2;
+      costo = 7000;
     }
   
     if (op == 'anual') {
-      resultado = valor1 * valor2;
+      costo -= 7000 * 0.05;
     }
   
-    document.getElementById("resultado2").textContent =
-      "EL RESULTADO ES:" + resultado;
+    document.getElementById("duracion").textContent = resultado;
   }
