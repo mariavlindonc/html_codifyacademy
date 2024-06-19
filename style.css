@@ -53,7 +53,7 @@ body{
 .div{
     align-self: center;
     justify-content: center;
-    background-color: rgb(55, 133, 169);
+    background-color: rgb(79, 111, 125);
     width: 50%;
     height: 100vh;
     left: 0;
@@ -72,6 +72,10 @@ body{
     background-image: url(images/background.jpeg);
 }
 
+#tituloinsc {
+    padding-top: 130px;
+}
+
 .bot{
     background-color: rgb(193, 224, 235);
     color:rgb(4, 16, 26);
@@ -87,8 +91,8 @@ body{
 }
 
 .bot:hover{
-    background-color:rgb(19, 77, 124);
-    color: rgb(193, 224, 235);
+    background-color:rgb(90, 136, 173);
+    color: white;
     cursor:pointer;
 }
 

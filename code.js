@@ -20,14 +20,25 @@ function limpiar()
 }
 
 function inscribir() {
-    document.getElementById("nombre").value = "";
-    document.getElementById("apellido").value = "";
-    document.getElementById("dni").value = "";
-    document.getElementById("edad").value = "";
-    document.getElementById("masc").checked = false;
-    document.getElementById("fem").checked = false;
-    document.getElementById("fecha").value = "2024-07-01";
-    document.getElementById("mensaje").textContent = "Inscripción Exitosa.";
+    if (document.getElementById("nombre").value != "" &&
+        document.getElementById("apellido").value != "" &&
+        document.getElementById("dni").value != "" &&
+        document.getElementById("edad").value != "" &&
+        (document.getElementById("masc").checked == true || document.getElementById("fem").checked == true))
+    {
+        document.getElementById("nombre").value = "";
+        document.getElementById("apellido").value = "";
+        document.getElementById("dni").value = "";
+        document.getElementById("edad").value = "";
+        document.getElementById("masc").checked = false;
+        document.getElementById("fem").checked = false;
+        document.getElementById("fecha").value = "2024-07-01";
+        document.getElementById("mensaje").textContent = "Inscripción Exitosa.";
+    }
+    else
+    {
+        document.getElementById("mensaje").textContent = "Por favor, completar todos los campos.";
+    }
 }
 
   
@@ -99,5 +110,5 @@ function metodo() {
       costo -= 7000 * 0.05;
     }
   
-    document.getElementById("costo").textContent = costo;
+    document.getElementById("costo").textContent = "$" + costo + " por semana";
 }
