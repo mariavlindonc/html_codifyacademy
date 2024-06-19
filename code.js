@@ -27,7 +27,7 @@ function inscribir() {
     document.querySelector('input[name="plan"]:checked').value;
     document.getElementById("curso").value = "";
   
-    document.querySelector(".resultado").textContent = "¡Inscripción Exitosa!";
+    document.getElementById("resultado").textContent = "Inscripción Exitosa";
   }
   
   function duracion() 
