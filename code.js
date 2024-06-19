@@ -27,29 +27,64 @@ function inscribir() {
     document.querySelector('input[name="plan"]:checked').value;
     document.getElementById("curso").value = "";
   
-    document.getElementById("resultado").textContent = "¡Inscripción Exitosa!";
+    document.querySelector(".resultado").textContent = "¡Inscripción Exitosa!";
   }
   
-  function duracion() {
-    var v1 = document.getElementById("marca").value;
-    var v2 = document.getElementById("modelo").value;
+  function duracion() 
+  {
+    var v1 = document.getElementById("area").value;
+    var v2 = document.getElementById("nivel").value;
   
-    if (v1 == 1 && v2 == 1) {
-      document.getElementById("resultado2").textContent =
-        "EL PRECIO ES 12.000.000 DE PESOS";
+    if (v2 == 1)
+    { 
+        if (v1 == 2) {
+            document.getElementById("duracion").textContent =
+            "4 semanas";
+        }
+        if (v1 == 1) {
+            document.getElementById("duracion").textContent =
+            "5 semanas";
+        }
+  
+        if (v1 == 3) {
+            document.getElementById("duracion").textContent =
+            "6 semanas";
+        }
     }
+    if (v2 == 2)
+    { 
+        if (v1 == 2) {
+            document.getElementById("duracion").textContent =
+            "7 semanas";
+        }
+        if (v1 == 1) {
+            document.getElementById("duracion").textContent =
+            "8 semanas";
+        }
   
-    if (v1 == 1 && v2 == 2) {
-      document.getElementById("resultado2").textContent =
-        "EL PRECIO ES 10.000.000 DE PESOS";
+        if (v1 == 3) {
+            document.getElementById("duracion").textContent =
+            "9 semanas";
+        }
     }
+    if (v2 == 3)
+    { 
+        if (v1 == 2) {
+            document.getElementById("duracion").textContent =
+            "10 semanas";
+        }
+        if (v1 == 1) {
+            document.getElementById("duracion").textContent =
+            "11 semanas";
+        }
   
-    if (v1 == 1 && v2 == 3) {
-      document.getElementById("resultado2").textContent =
-        "EL PRECIO ES 11.000.000 DE PESOS";
+        if (v1 == 3) {
+            document.getElementById("duracion").textContent =
+            "12 semanas";
+        }
     }
   }
-  
+
   function metodo() {
     var op = document.querySelector('input[name="plan"]:checked').value;
     var costo = 7000;

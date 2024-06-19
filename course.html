@@ -14,7 +14,7 @@
       <form>
         <p>
           Nombre:
-          <input
+          <input required 
             type="text"
             name="nombre"
             id="nombre"
@@ -23,7 +23,7 @@
         </p>
         <p>
           Apellido:
-          <input
+          <input required
             type="text"
             name="apellido"
             id="apellido"
@@ -32,7 +32,7 @@
         </p>
         <p>
           DNI:
-          <input
+          <input required 
             type="number"
             name="dni"
             id="dni"
@@ -41,7 +41,7 @@
         </p>
         <p>
           Edad:
-          <input
+          <input required
             type="number"
             name="edad"
             id="edad"
@@ -79,12 +79,13 @@
         <p>
           <strong>Nivel:</strong>
           <select name="nivel" id="nivel">
-            <option value="A">Basic</option>
-            <option value="B">Junior</option>
-            <option value="C">Senior</option>
+            <option value="1">Basic</option>
+            <option value="2">Junior</option>
+            <option value="3">Senior</option>
           </select>
         </p>
-          <p> <strong>Duracion:</strong> </p>
+        <button onclick="duracion()"> Calcular </button>  
+        <p> <strong>Duracion:</strong> <span id="duracion"></span></p>
 <div class="div3">
      <h1 class="h1">Plan de pago</h1>
         <p>
@@ -97,10 +98,8 @@
             <br>
         </p>
       </form>
-         <button onclick="duracion()">CALCULAR</button>
         <br>
-        <br>
-      <button onclick="metodo()">MOSTRAR PRECIO</button>
+      <button onclick="metodo()"> Mostrar </button>
          <p id="resultado2"></p>
     </div> 
 </div>
