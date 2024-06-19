@@ -5,7 +5,7 @@ function validar()
     
     if (usuario == "guillesanchez" && clave == "4750")
     {
-        window.location.href = "./main.html";      
+        window.location.href = "./course.html";      
     } 
     else 
     {
