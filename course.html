@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Codify Academy - Curso</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
     <script src="./code.js"></script>
 </head>
 <body>
    <div class="div2">
       <h1>Afiliacion cliente</h1>
 
-      <form submit="event.preventDefault()">
+      <form onsubmit="event.preventDefault()">
         <p>
           Nombre:
           <input 
@@ -50,16 +50,15 @@
         </p>
         <p>
           Sexo: Masculino
-          <input type="radio" name="sexo" value="masculino" /> Femenino
-          <input type="radio" name="sexo" value="femenino" />
+          <input type="radio" id="masc" name="sexo" value="masculino" /> Femenino
+          <input type="radio" id="fem" name="sexo" value="femenino" />
         </p>
           <p> Fecha de comienzo:
-          <input type="date" name="fecha" value="2024-07-01" />
+          <input type="date" id="fecha" name="fecha" value="2024-07-01" />
         </p>
-         
       </form>
 
-      <button class="bot1" onclick="inscribir()">Inscribirse</button>
+      <button class="bot1" type="submit" onclick="inscribir()">Inscribirse</button>
       <p id="mensaje"></p>
     </div>
 

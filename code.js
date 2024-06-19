@@ -24,15 +24,15 @@ function inscribir() {
     document.getElementById("apellido").value = "";
     document.getElementById("dni").value = "";
     document.getElementById("edad").value = "";
-    document.getElementById("masculino").checked = false;
-    document.getElementById("femenino").checked = false;
+    document.getElementById("masc").checked = false;
+    document.getElementById("fem").checked = false;
+    document.getElementById("fecha").value = "2024-07-01";
+    document.getElementById("mensaje").textContent = "Inscripción Exitosa.";
+}
 
   
-    document.getElementById("mensaje").textContent = "Inscripción Exitosa.";
-  }
-  
-  function duracion() 
-  {
+function duracion() 
+{
     var v1 = document.getElementById("area").value;
     var v2 = document.getElementById("nivel").value;
   
@@ -81,9 +81,9 @@ function inscribir() {
             "12 semanas";
         }
     }
-  }
+}
 
-  function metodo() {
+function metodo() {
     var op = document.querySelector('input[name="plan"]:checked').value;
     var costo = 7000;
   
@@ -100,4 +100,4 @@ function inscribir() {
     }
   
     document.getElementById("costo").textContent = costo;
-  }
+}
