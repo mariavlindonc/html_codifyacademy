@@ -24,8 +24,8 @@ function inscribir() {
     document.getElementById("apellido").value = "";
     document.getElementById("dni").value = "";
     document.getElementById("edad").value = "";
-    document.querySelector('input[name="sexo"]:checked').value ="";
-    document.getElementById("fecha").value = "2024-07-01";
+    document.querySelector('input[name="plan"]:checked').value;
+    document.getElementById("curso").value = "";
   
     document.getElementById("resultado").textContent = "¡Inscripción Exitosa!";
   }
@@ -52,17 +52,17 @@ function inscribir() {
   
   function metodo() {
     var op = document.querySelector('input[name="plan"]:checked').value;
-    var resultado;
+    var costo = ;
   
-    if (op == 1) {
+    if (op == 'por_curso') {
       resultado = valor1 + valor2;
     }
   
-    if (op == 2) {
+    if (op == 'mensual') {
       resultado = valor1 - valor2;
     }
   
-    if (op == 3) {
+    if (op == 'anual') {
       resultado = valor1 * valor2;
     }
   
