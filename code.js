@@ -41,44 +41,41 @@ function inscribir() {
             document.getElementById("duracion").textContent =
             "4 semanas";
         }
-        if (v1 == 1) {
+        else if (v1 == 1) {
             document.getElementById("duracion").textContent =
             "5 semanas";
         }
-  
-        if (v1 == 3) {
+        else if (v1 == 3) {
             document.getElementById("duracion").textContent =
             "6 semanas";
         }
     }
-    if (v2 == 2)
+    else if (v2 == 2)
     { 
         if (v1 == 2) {
             document.getElementById("duracion").textContent =
             "7 semanas";
         }
-        if (v1 == 1) {
+        else if (v1 == 1) {
             document.getElementById("duracion").textContent =
             "8 semanas";
         }
-  
-        if (v1 == 3) {
+        else if (v1 == 3) {
             document.getElementById("duracion").textContent =
             "9 semanas";
         }
     }
-    if (v2 == 3)
+    else if (v2 == 3)
     { 
         if (v1 == 2) {
             document.getElementById("duracion").textContent =
             "10 semanas";
         }
-        if (v1 == 1) {
+        else if (v1 == 1) {
             document.getElementById("duracion").textContent =
             "11 semanas";
         }
-  
-        if (v1 == 3) {
+        else if (v1 == 3) {
             document.getElementById("duracion").textContent =
             "12 semanas";
         }
@@ -93,13 +90,13 @@ function inscribir() {
       costo += 7000 * 0.05;
     }
   
-    if (op == 'mensual') {
+    else if (op == 'mensual') {
       costo = 7000;
     }
   
-    if (op == 'anual') {
+    else if (op == 'anual') {
       costo -= 7000 * 0.05;
     }
   
-    document.getElementById("duracion").textContent = resultado;
+    document.getElementById("duracion").textContent = costo;
   }
